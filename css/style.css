@@ -7,6 +7,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family:"Metal Mania";
     font-size:40pt;
+    text-align:center;
 }
 
 header {
@@ -27,4 +28,43 @@ header {
 
 #bio {
     text-align:center;
+}
+
+#hobbies ul {
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#hobbies ul li:nth-child(even) {
+    color:#044f78;
+}
+
+#gallery {
+    text-align:center;
+    border:2px solid #8C0900;
+}
+
+#gallery img {
+    max-width:100%;
+}
+
+/* Article */
+article {
+    padding:2cm;
+}
+
+article p:first-letter {
+    color: #044f78;
+    font-size:250%;
+    border: 2px solid #8C0900;
+    padding-left:.5ex;
+    padding-right:.5ex;
+    display:block;
+    float:left;
+    margin-right:.5ex;
+    font-family:"Metal Mania";
+    background-color:#FFC9C6;
+    
+
 }
