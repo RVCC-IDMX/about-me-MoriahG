@@ -96,14 +96,50 @@ section#hobbies {
     
 }
 
+/* Video */
+#video figcaption {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#vid iframe {
+    position:absolute;
+    top:0px;
+    left:0%;
+    width:100%;
+    height:100%;
+    border:3px solid #8C0900;
+}
+
+#vid {
+    position:relative;
+    padding-bottom: 177.9%;
+}
+
+#video {
+    width:70%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom: 70px;
+}
+
+#video figure {
+    width:25%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* ------------- Media States ------------ */
 /* tablet size */
 @media screen and (min-width: 60em) {
-    figure {
+    #gallery figure {
         display: grid;
         grid-template-columns: 2fr 1fr;
     }
 
-    figcaption {
+    #gallery figcaption {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -137,9 +173,14 @@ section#hobbies {
         grid-column: 1/-1;
     }
 
-    figure {
+    #gallery figure {
         display: block;
     }
 
+    #video {
+        width:30%;
+    }
+
 }
+
 
