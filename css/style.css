@@ -1,6 +1,6 @@
 body {
     font-family:"Antic Slab";
-    background-color: #ddf2ff;
+    background-color: #f0f9fe;
     color: #8C0900;
 }
 
@@ -20,7 +20,7 @@ header {
 #hero, footer{
     color: #1277ad;
     border: 2px solid #8C0900;
-    background-color: #FFC9C6;
+    background-color: #fce2e1;
     text-align:center;
     padding:10px;
 }
@@ -91,7 +91,7 @@ section#hobbies {
     margin-right:.5ex;
     line-height: .65;
     font-family:"Metal Mania";
-    background-color:#FFC9C6;
+    background-color:#fce2e1;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.427);
     
 }
