@@ -30,6 +30,8 @@ main {
     flex-direction:column;
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 /* logo */
@@ -84,3 +86,15 @@ min-width set to width of nav elements
 such that no text wraps 
 */
 
+@media screen and (min-width:40rem) {
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar ul {
+        display: flex;
+        justify-content: space-between;
+    }
+}
