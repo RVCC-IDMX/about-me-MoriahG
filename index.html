@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
-
+    <link rel="shortcut icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,25 +13,21 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/nav.css" rel="stylesheet">
 
+
 </head>
 <body>
 
-    <!-- A body is the element that contains all content shown to the visitor! -->
+    <!-- Body that contains all content shown to the visitor! -->
 
     <header>
-        <!-- The header shows the page logo and  page title 
-        
-        <img src="img/logo-96X96.svg" alt="Blue bird logo">
-        <h1>About Me</h1>
-
-        -->
+        <!-- The header that shows the page logo and page title plus navbar -->
 
         <nav class="navbar">
             <div class="logo">
                 <img
-                    src="img/logo-96X96.svg"
+                    src="img/MGlogo.svg"
                     class="log-img"
-                    alt="Blue origami logo"
+                    alt="MG logo"
                 />
                 <h1 class="logo-title">About me</h1>
             </div>
@@ -48,19 +44,21 @@
     </header>
 
     <main>
-        <!-- The main envelops important page content -->
+        <!-- The main enveloping important page content -->
+
+        <!-- Hero -->
+
         <section id="hero">
             <h3>Moriah Guretse</h3>
-            <img src="img/avatar.jpg" alt="A beautiful angelic avatar of a woman wearing a pink hat">
+            <img src="img/avatar.jpg" alt="A photo of Moriah Guretse, who is a beautiful ginger">
             <div>
                 <p>Mansfield, NJ</p>
             </div>
         </section>
 
-        
+        <!-- Biography -->
 
         <section id="bio">
-            <!-- This is my bio -->
 
             <h2>Biography</h2>
 
@@ -73,17 +71,24 @@
             </div>
         </section>
 
+        <!-- Hobbies -->
+
         <section id="hobbies">
 
             <h2>Hobbies</h2>
-
+            <div id="hobinfo">
+                <img src="img/snuggles.jpg" alt="Moriah snuggling an orange cat Tater Tot">
+                <img src="img/minecraft.png" alt="A picture of minecraft, with water, houses, and a castle in the distance">
+            </div>
             <ul>
-                <li>Snuggling my cats</li>
-                <li>Watching Markiplier</li>
-                <li>Playing video games</li>
+                <li><b>Snuggling my cats</b>- Tater is so warm and purrs like crazy, and lily likes cuddling your legs too!</li>
+                <li><b>Playing video games</b>- I enjoy playing Minecraft, Oneshot, Viscera Cleanup Detail, SCP games, and more.</li>
+                <li><b>Watching <a href="https://www.youtube.com/@markiplier/featured">Markiplier</a></b>- When I can..</li>
             </ul>
 
         </section>
+
+        <!-- Gallery -->
 
         <section id="gallery">
 
@@ -112,13 +117,14 @@
             <figure>
 
                 <img src="img/lilytoes-640w.jpg" alt="My cat lily licking her toes">
-                <figcaption>Will be replaced with a picture of both of them.</figcaption>
+                <figcaption>Lily's favorite meal.</figcaption>
                 
             </figure>
 
         </section>
 
-        <!-- Article -->
+        <!-- Blog Article -->
+
         <article id="lit">
 
             <h2>Imagine Hover Affects</h2>
@@ -135,6 +141,8 @@
 
         </article>
 
+        <!-- Video of Tater -->
+
         <section id="video">
 
             <h2>A Short Video</h2>
@@ -148,7 +156,7 @@
 
         </section>
 
-        <!-- Contact -->
+        <!-- Contact Form -->
 
         <section id="contact">
 
@@ -216,9 +224,12 @@
 
     </main>
 
-    <footer>
+    <!-- Footer with Github link -->
 
-        © 2023 - Moriah Guretse
+    <footer>
+        <a href="https://github.com/RVCC-IDMX/about-me-MoriahG"> <img src="img/github.svg" alt="Github link"></a>
+
+        <p>© 2023 - Moriah Guretse</p>
 
     </footer>
 

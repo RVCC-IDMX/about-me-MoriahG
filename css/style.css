@@ -2,8 +2,8 @@
 body {
     font-family:"Chakra Petch";
     font-size:14pt;
-    background-color: #f8efe0;
-    color: #8C0900;
+    background-color: #f8f0e2;
+    color: #8a0900;
     margin:0;
 }
 main {
@@ -23,23 +23,34 @@ h2 {
 header {
     text-align:center;
 }
-/* Hero */
+/* Hero and footer */
 
 #hero, footer{
-    color: #f8efe0;
-    background-color: #35533a;
+    color: #f7d633;
+    background-color: #36543b;
     text-align:center;
     padding:10px;
     margin:0;
 }
 
+footer {
+    padding-top:30px;
+}
+
+footer img{
+    background-color:#f7d633;
+    padding:3px;
+    box-shadow: 0px 5px 5px #0000004f; 
+    border-radius: 50%;
+}
+
 #hero, h3 {
-    color: rgb(247, 214, 51);
+    color: #f7d633;
 }
 
 #hero img {
     width:300px;
-    box-shadow: 0px 10px 10px 30px black;
+    box-shadow: 0px 5px 5px 5px #0000004f; 
     max-width:100%;
 }
 
@@ -71,11 +82,20 @@ section#hobbies {
     padding: 1.5em;
     margin: 1.5em;
 }
-
-#hobbies ul li:nth-child(odd) {
-    color:#35533a;
+#hobinfo {
+    display: grid;
+    grid-template-columns: .69fr 1fr;
+    grid-template-areas: "a b";
+    padding-top:30px;
 }
-
+#hobbies img {
+    width:600px;
+    max-width:100%;
+    border:3px solid #36543b;
+}
+#hobbies ul {
+    color:#36543b;
+}
 /* Gallery */
 
 #gallery {
@@ -87,6 +107,7 @@ section#hobbies {
 
 #gallery img {
     max-width:50%;
+    box-shadow: 5px 5px 5px rgba(53, 49, 44, 0.815);
 }
 
 #gallery figure {
@@ -113,16 +134,16 @@ section#hobbies {
     padding: .3rem 0;
     margin:0px;
     clear: both;
+    color:#36543b;
 }
 
 /* Drop caps */
 
 #lit div p:first-child:first-letter {
-    color: #8C0900;
+    color: #36543b;
     background-color: #f8efe0;
-    /*background-image: radial-gradient(#ffeae9, #FFC9C6);*/
     font-size: 2em;
-    border: 5px solid #8C0900;
+    border: 5px solid #36543b;
     padding: .25cm;
     display: block;
     float: left;
