@@ -1,59 +1,114 @@
+
 body {
-    font-family:"Antic Slab";
-    background-color: #f0f9fe;
-    color: #8C0900;
+    font-family:"Chakra Petch";
+    font-size:14pt;
+    background-color: #f8f0e2;
+    color: #8a0900;
+    margin:0;
+}
+main {
+    margin:0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family:"Metal Mania";
-    font-size:40pt;
+    font-family:"Stalinist One";
+    font-size:25pt;
     text-align:center;
+    max-width:100%;
 }
 
 h2 {
-    margin: .1em;
+    margin: 0em;
 }
 header {
     text-align:center;
 }
+/* Hero and footer */
 
 #hero, footer{
-    color: #1277ad;
-    border: 2px solid #8C0900;
-    background-color: #fce2e1;
+    color: #f7d633;
+    background-color: #36543b;
     text-align:center;
     padding:10px;
+    margin:0;
+}
+
+footer {
+    padding-top:30px;
+    box-shadow: 0px -3px 15px rgba(53, 49, 44, 0.514);
+}
+
+footer img{
+    background-color:#f7d633;
+    padding:3px;
+    box-shadow: 0px 5px 5px #0000004f; 
+    border-radius: 50%;
+}
+
+#hero, h3 {
+    color: #f7d633;
 }
 
 #hero img {
     width:300px;
+    box-shadow: 0px 0px 10px 5px #00000079; 
+    max-width:100%;
 }
 
+/* Biography */
+
 #bio {
+    background-color: #e1d8c7;
+    box-shadow: 0px 5px 15px 10px rgba(161, 149, 135, 0.427) inset;
+    text-align:center;
+    padding: 1.5em;
+    margin: 1.5em;
+}
+
+#bio div {
+    margin:0 auto;
+    width: 80rem;
+    max-width:100%;
     text-align:center;
 }
 
 /* Hobbies */
 
 section#hobbies {
+    background-color: #e1d8c7;
+    box-shadow: 0px 5px 15px 10px rgba(161, 149, 135, 0.427) inset;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 1.5em;
+    margin: 1.5em;
 }
-
-#hobbies ul li:nth-child(even) {
-    color:#044f78;
+#hobinfo {
+    display: grid;
+    grid-template-columns: .69fr 1fr;
+    grid-template-areas: "a b";
+    padding-top:30px;
 }
-
+#hobbies img {
+    width:600px;
+    max-width:100%;
+    border:3px solid #36543b;
+}
+#hobbies ul {
+    color:#36543b;
+}
 /* Gallery */
 
 #gallery {
-    border:2px solid #8C0900;
-    margin-bottom: 2rem;
+    background-color: #e1d8c7;
+    padding: 3rem;
+    box-shadow: 0px 5px 15px 10px rgba(161, 149, 135, 0.427) inset;
+    margin: 1.5em;
 }
 
 #gallery img {
-    max-width:100%;
+    max-width:50%;
+    box-shadow: 5px 5px 5px rgba(53, 49, 44, 0.815);
 }
 
 #gallery figure {
@@ -63,8 +118,11 @@ section#hobbies {
 /* Article */
 
 #lit {
-    border: 2px solid #8C0900;
+    background-color: #e1d8c7;
+    box-shadow: 0px 5px 15px 10px rgba(161, 149, 135, 0.427) inset;
     margin-bottom: 2rem;
+    padding: 1.5em;
+    margin: 1.5em;
 }
 
 #lit div {
@@ -75,23 +133,37 @@ section#hobbies {
 
 #lit div p{
     padding: .3rem 0;
+    margin:0px;
     clear: both;
+    color:#36543b;
+}
+
+#lit img{
+    margin-top:30px;
+    width:600px;
+    max-width:100%;
+    border:3px solid #36543b;
+    transition: 1s;
+}
+
+#lit img:hover{
+    filter:grayscale(100%);
+    transform: scaleY(-1);
 }
 
 /* Drop caps */
 
 #lit div p:first-child:first-letter {
-    color: #044f78;
-    background-image: radial-gradient(#ffeae9, #FFC9C6);
-    font-size: 3em;
-    border: 5px double #8C0900;
+    color: #36543b;
+    background-color: #f8efe0;
+    font-size: 2em;
+    border: 5px solid #36543b;
     padding: .25cm;
     display: block;
     float: left;
     margin-right:.5ex;
-    line-height: .65;
-    font-family:"Metal Mania";
-    background-color:#fce2e1;
+    line-height: 1;
+    font-family:"Stalinist One";
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.427);
     
 }
@@ -151,7 +223,8 @@ fieldset {
     padding-right: 1rem;
     margin-top:1em;
     margin-bottom:1em;
-    background-color: #fce2e1;
+    background-color: #e1d8c7;
+    box-shadow: 0px 3px 8px 4px rgba(199, 184, 167, 0.427) inset;
 }
 
 #contact input, #contact textarea, #contact select, #contact button {
@@ -200,12 +273,12 @@ legend {
     }
 
     figure img{
-        width: 100%;
+        width:100%;
     }
 
     #lit div {
         max-width: 100%;
-        columns: 20rem;
+        columns: 50rem;
     }
 
     #video figure {
