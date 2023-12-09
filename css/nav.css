@@ -9,6 +9,7 @@ body {
     box-sizing: border-box;
     padding:0;
     margin:0;
+    
 }
 
 /* navbar */
@@ -22,7 +23,7 @@ body {
     margin-bottom: 1.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    box-shadow: 20px 0px 20px rgba(82, 82, 82, 0.427);
+    box-shadow: 0px 3px 5px #181717a3;
 }
 
 /* logo */
@@ -76,7 +77,7 @@ min-width set to width of nav elements
 such that no text wraps 
 */
 
-@media screen and (min-width:43rem) {
+@media screen and (min-width:60rem) {
 
     .navbar {
         flex-direction: row;
